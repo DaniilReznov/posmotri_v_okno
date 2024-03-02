@@ -1,7 +1,3 @@
-/* Благодарю за добрые слова, добрый человек)
-Хотелось бы уточнить по поводу коммита у более опытного человека
-Правильно ли я его оформил или же нужно писать как-то по другому
-Или вообще стоит писать всё на английском языке */
 *,
 *::before,
 *::after {
@@ -148,6 +144,7 @@ ol {
 .content__card-link {
   text-decoration: none;
   display: block;
+  margin: 2px;
 }
 
 .visually-hidden {
@@ -171,7 +168,7 @@ ol {
   line-height: 22px;
   text-align: center;
   color: #fff;
-  border: solid 1px #fff;
+  border: 1px solid #fff;
   background: transparent;
   min-height: 34px;
   cursor: pointer;
@@ -183,6 +180,7 @@ ol {
 
 .search-form__submit-button {
   width: 194px;
+  align-self: flex-end;
 }
 
 /* Отрисовка маркера */
@@ -195,7 +193,6 @@ ol {
 
 .search-form__label {
   display: flex;
-  padding-bottom: 11px;
 }
 
 .search-form__pseudo-checkbox {
@@ -234,7 +231,7 @@ ol {
 }
 
 .content__card-link:focus-visible {
-  outline: solid 1px #fff;
+  outline: 1px solid #fff;
 }
 
 .button:focus {
@@ -253,24 +250,15 @@ ol {
 }
 
 .button:focus-visible {
-  border: solid 1px #fff; 
   outline: solid 1px #fff;
-  outline-offset: -4px;
+  outline-offset: -2px;
 }
 
 /* Взаимодействие с маркерами(время суток) */
 
-.search-form__pseudo-checkbox:hover {
-  cursor: pointer;
-}
-
-.search-form__label:focus {
-  outline: none;
-}
-
 .search-form__label:has(:focus-visible) {
   width: fit-content;
-  outline: solid 1px #fff;
+  outline: 1px solid #fff;
   outline-offset: 2px;
 }
 
